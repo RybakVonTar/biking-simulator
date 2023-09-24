@@ -14,7 +14,7 @@ public class level_generation : MonoBehaviour
     public GameObject tile7;
     public GameObject tile8;
     public GameObject tile9;
-    public GameObject tile10;
+    public GameObject camera;
 
     public int speed;
 
@@ -32,37 +32,9 @@ public class level_generation : MonoBehaviour
 
     void update() 
     {
-        if (Input.GetKeyDown(KeyCode.D) && tile0.transform.position.x <= -30 ) //&
+        if (camera.transform.position.x < tile0.transform.position.x + 2)
         {
-            tile1_index ++;
-            Debug.Log("d");
-        }
-        else if (Input.GetKeyDown(KeyCode.D) && tile0.transform.position.x <= -2 )
-        {
-            tile0_index --;
-            Debug.Log("c");
-        }
-
-        if (Input.GetKeyDown(KeyCode.A) && tile1.transform.position.x >= 30 )
-        {
-            tile0_index --;
-            Debug.Log("b");
-        }
-        else if (Input.GetKeyDown(KeyCode.A) && tile1.transform.position.x >= 2 )
-        {
-            tile0_index ++;
-            Debug.Log("a");
-        }
-
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            tile0.transform.position = new Vector2(tile0.transform.position.x + 1 * Time.deltaTime * speed, tile0.transform.position.y);
-            Debug.Log("y");
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            tile0.transform.position = new Vector2(tile0.transform.position.x - 1 * Time.deltaTime * speed, tile0.transform.position.y);
-            Debug.Log("x");
+            
         }
     }
 } 
