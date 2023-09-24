@@ -523,7 +523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1000
   jumpForce: 40
-  tiltForce: 2
+  tiltAcceleration: 0.1
   boxSize: {x: 4, y: 2, z: 0}
   maxDistance: 0.5
   layerMask:
@@ -1339,5 +1339,5 @@ MonoBehaviour:
   tile7: {fileID: 1836534843}
   tile8: {fileID: 1836534843}
   tile9: {fileID: 1836534843}
-  tile10: {fileID: 1836534843}
+  camera: {fileID: 0}
   speed: 10
