@@ -5,17 +5,17 @@ using UnityEngine;
 public class BikeWheels : MonoBehaviour {
 
     public BikeFrame bike;
-    private HingeJoint2D hinge;
+    private HingeJoint2D hj;
 
     void Start() {
-        hinge = GetComponent<HingeJoint2D>();
+        hj = GetComponent<HingeJoint2D>();
     }
 
     void Update() {
         float horizontalInput = Input.GetAxis("Horizontal");
         
-        var motor = hinge.motor;
+        var motor = hj.motor;
         motor.motorSpeed = horizontalInput * bike.speed;
-        hinge.motor = motor;
+        hj.motor = motor;
     }
 }

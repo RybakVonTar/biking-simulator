@@ -9,28 +9,27 @@ public class BikeFrame : MonoBehaviour {
 
     public int speed;
     public int jumpForce;
-    public int tiltForce;
+    public float tiltForce;
     private Rigidbody2D rb;
-    private HingeJoint2D hj;
     public Vector3 boxSize;
     public float maxDistance;
     public LayerMask layerMask;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
-        hj = GetComponent<HingeJoint2D>();
     }
 
     void Update() {
-        SetTiltSpeed(0);
+        
         if (Input.GetKeyDown(KeyCode.Space) && GroundCheck()) {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
+            rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse); 
         }
 
         if (Input.GetKey(KeyCode.A) && !GroundCheck()) {
-            SetTiltSpeed(-tiltForce);
+            transform.Rotate(0, 0, tiltForce);
+
         } else if (Input.GetKey(KeyCode.D) && !GroundCheck()) {
-            SetTiltSpeed(tiltForce);
+            transform.Rotate(0, 0, -tiltForce);
         }
     }
 
@@ -39,11 +38,5 @@ public class BikeFrame : MonoBehaviour {
             return true;
         }
         return false;
-    }
-
-    private void SetTiltSpeed(int speed) {
-        var motor = hj.motor;
-        motor.motorSpeed = speed;
-        hj.motor = motor;
     }
 }
