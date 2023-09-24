@@ -1,2 +1,7 @@
 # Bike Simulator
-* going to make readme tomorrow
+* Desktop App
+
+# Controlls
+* Left Arrow / A ..... move left
+* Right Arrow / D .... move right
+* Space .............. jump
