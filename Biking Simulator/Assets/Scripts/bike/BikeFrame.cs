@@ -9,7 +9,8 @@ public class BikeFrame : MonoBehaviour {
 
     public int speed;
     public int jumpForce;
-    public float tiltForce;
+    public float tiltAcceleration;
+    private float tiltForce;
     private Rigidbody2D rb;
     public Vector3 boxSize;
     public float maxDistance;
@@ -22,13 +23,20 @@ public class BikeFrame : MonoBehaviour {
     void Update() {
         
         if (Input.GetKeyDown(KeyCode.Space) && GroundCheck()) {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse); 
+            rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
+            tiltForce = 0;
         }
 
         if (Input.GetKey(KeyCode.A) && !GroundCheck()) {
+            if (tiltForce < 2) {
+                tiltForce += tiltAcceleration;
+            }
             transform.Rotate(0, 0, tiltForce);
 
         } else if (Input.GetKey(KeyCode.D) && !GroundCheck()) {
+            if (tiltForce < 2) {
+                tiltForce += tiltAcceleration;
+            }
             transform.Rotate(0, 0, -tiltForce);
         }
     }
