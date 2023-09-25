@@ -382,6 +382,8 @@ MonoBehaviour:
   tile9: {fileID: 180150135}
   camera: {fileID: 519420028}
   lenght: 0
+  index: 0
+  tile_list: []
 --- !u!212 &180150138
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -541,6 +543,8 @@ MonoBehaviour:
   tile9: {fileID: 319727995}
   camera: {fileID: 519420028}
   lenght: 0
+  index: 0
+  tile_list: []
 --- !u!212 &319727998
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1114,6 +1118,8 @@ MonoBehaviour:
   tile9: {fileID: 758236968}
   camera: {fileID: 519420028}
   lenght: 0
+  index: 0
+  tile_list: []
 --- !u!212 &758236971
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1440,6 +1446,8 @@ MonoBehaviour:
   tile9: {fileID: 833963145}
   camera: {fileID: 519420028}
   lenght: 0
+  index: 0
+  tile_list: []
 --- !u!212 &833963148
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1836,7 +1844,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1836534845}
   - component: {fileID: 1836534844}
-  - component: {fileID: 1836534847}
   - component: {fileID: 1836534846}
   m_Layer: 3
   m_Name: level1_tile0
@@ -1961,27 +1968,3 @@ PolygonCollider2D:
       - {x: 4.16, y: -1.5}
       - {x: 4.16, y: -0.42}
       - {x: 4.1, y: -0.42}
---- !u!114 &1836534847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836534843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daf85432705b63f4a9cbe2a90351ffa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile0: {fileID: 1836534843}
-  tile1: {fileID: 758236968}
-  tile2: {fileID: 319727995}
-  tile3: {fileID: 833963145}
-  tile4: {fileID: 180150135}
-  tile5: {fileID: 1836534843}
-  tile6: {fileID: 1836534843}
-  tile7: {fileID: 1836534843}
-  tile8: {fileID: 1836534843}
-  tile9: {fileID: 1836534843}
-  camera: {fileID: 519420028}
-  lenght: 28
