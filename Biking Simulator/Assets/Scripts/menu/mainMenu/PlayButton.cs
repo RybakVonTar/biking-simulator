@@ -8,6 +8,7 @@ public class PlayButton : MonoBehaviour
 {
     public Button yourButton;
     public string sceneName;
+    public bool exit;
 
     void Start()
     {
@@ -18,6 +19,13 @@ public class PlayButton : MonoBehaviour
 
     void TaskOnClick()
     {
-        SceneManager.LoadScene(sceneName: sceneName);
+        if (exit)
+        {
+            Application.Quit();
+        }
+        else 
+        {
+            SceneManager.LoadScene(sceneName: sceneName); 
+        }
     }
 }
