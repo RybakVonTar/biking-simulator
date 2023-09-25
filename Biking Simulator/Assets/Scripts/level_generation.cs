@@ -42,8 +42,8 @@ public class level_generation : MonoBehaviour
     {
         if (Mathf.Round(camera.transform.position.x) == tile_list[index].transform.position.x && index < 9)
         {
-            tile_list[index + 1].transform.position = new Vector2(tile_list[index + 1].transform.position.x + lenght, -1.5f);
             index ++;
+            tile_list[index].transform.position = new Vector2(tile_list[index-1].transform.position.x + lenght, -1.5f);
             Debug.Log("new tile generated");
         }
     }
