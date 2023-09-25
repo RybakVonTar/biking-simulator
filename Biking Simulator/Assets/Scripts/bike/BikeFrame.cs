@@ -4,24 +4,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BikeFrame : MonoBehaviour {
-
+    public Vector3 position;
     public int speed;
     public int motorTorque;
     public int jumpForce;
     public float tiltAcceleration;
-    private float tiltForce;
+    public float tiltForce;
     public float maxTiltForce;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     public BikeWheels frontWheel;
     public BikeWheels backWheel;
     public bool doubleJump;
     public bool speedBoost;
-    private float speedBoostTimer;
+    public float speedBoostTimer;
     public int speedBoostValue;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         speedBoostTimer = 0;
+        LoadSave load = JsonUtility.FromJson<LoadSave>(FileManager.LoadFromFile("loadSaveData.json"));
+        if (load != null) {
+            LoadSave();
+        }
     }
 
     void Update() {
@@ -62,5 +66,11 @@ public class BikeFrame : MonoBehaviour {
                 motorTorque -= speedBoostValue;
             }
         } 
+    }
+
+    void LoadSave() { 
+        FileManager.LoadFromFile("bikeSaveData.json");
+        string json_bike = FileManager.LoadFromFile("bikeSaveData.json");
+        JsonUtility.FromJsonOverwrite(json_bike, this);
     }
 }
