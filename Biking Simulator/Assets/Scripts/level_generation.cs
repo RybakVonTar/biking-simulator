@@ -25,7 +25,7 @@ public class level_generation : MonoBehaviour
 
     void Start()
     {
-        tile_list = new List<GameObject>();
+        tile_list = new List<GameObject>(Instantiate(tile0) as GameObject, Instantiate(tile1) as GameObject, Instantiate(tile2) as GameObject, Instantiate(tile3) as GameObject, Instantiate(tile4) as GameObject, Instantiate(tile5) as GameObject, Instantiate(tile6) as GameObject, Instantiate(tile7) as GameObject, Instantiate(tile8) as GameObject, Instantiate(tile9) as GameObject);
         tile0_index = 0;
         tile1_index = 0;
     }
