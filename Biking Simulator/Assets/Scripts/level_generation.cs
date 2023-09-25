@@ -16,25 +16,35 @@ public class level_generation : MonoBehaviour
     public GameObject tile9;
     public GameObject camera;
 
-    public int speed;
+    public int lenght;
 
-    private int tile0_index;
-    private int tile1_index;
+    private int index;
 
     private List<GameObject> tile_list;
 
     void Start()
     {
         tile_list = new List<GameObject>();
-        tile0_index = 0;
-        tile1_index = 0;
+        tile_list.Add(tile0);
+        tile_list.Add(tile1);
+        tile_list.Add(tile2);
+        tile_list.Add(tile3);
+        tile_list.Add(tile4);
+        tile_list.Add(tile5);
+        tile_list.Add(tile6);
+        tile_list.Add(tile7);
+        tile_list.Add(tile8);
+        tile_list.Add(tile9);
+        
+        index = 0;
     }
 
-    void update() 
+    void Update() 
     {
-        if (camera.transform.position.x < tile0.transform.position.x + 2)
+        if (camera.transform.position.x == tile_list[index].transform.position.x && index < 9)
         {
-            
+            tile_list[index + 1].transform.position= tile_list[index + 1].transform.position + new Vector3(lenght, 0, 0);
+            index ++;
         }
     }
 } 
