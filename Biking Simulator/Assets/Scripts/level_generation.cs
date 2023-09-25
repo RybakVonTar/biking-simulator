@@ -17,7 +17,6 @@ public class level_generation : MonoBehaviour
     public GameObject camera;
 
     public int lenght;
-
     private int index;
 
     private List<GameObject> tile_list;
@@ -41,10 +40,11 @@ public class level_generation : MonoBehaviour
 
     void Update() 
     {
-        if (camera.transform.position.x == tile_list[index].transform.position.x && index < 9)
+        if (Mathf.Round(camera.transform.position.x) == tile_list[index].transform.position.x)
         {
-            tile_list[index + 1].transform.position= tile_list[index + 1].transform.position + new Vector3(lenght, 0, 0);
+            tile_list[index + 1].transform.position = new Vector2(tile_list[index + 1].transform.position.x + lenght, -1.5f);
             index ++;
+            Debug.Log("new tile generated");
         }
     }
 } 
