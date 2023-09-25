@@ -21,11 +21,11 @@ public class BikeFrame : MonoBehaviour {
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
-        speedBoostTimer = 0;
+        speedBoostTimer = 0;/*
         LoadSave load = JsonUtility.FromJson<LoadSave>(FileManager.LoadFromFile("loadSaveData.json"));
         if (load != null) {
             LoadSave();
-        }
+        }*/
     }
 
     void Update() {
