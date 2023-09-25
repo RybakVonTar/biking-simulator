@@ -18,6 +18,7 @@ public class BikeWheels : MonoBehaviour {
         float horizontalInput = Input.GetAxis("Horizontal");
         
         var motor = hj.motor;
+        motor.maxMotorTorque = bike.motorTorque;
         motor.motorSpeed = horizontalInput * bike.speed;
         hj.motor = motor;
     }

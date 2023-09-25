@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class ScoreCounter : MonoBehaviour {
+public class DistanceCounter : MonoBehaviour {
 
     public TextMeshProUGUI countText;
     private float previousDiff;
@@ -12,10 +12,12 @@ public class ScoreCounter : MonoBehaviour {
     private float startDistance;
     public BikeFrame bike;
     private float bikeDistance;
-    private float displayCount;
+    public float displayCount;
+    public float levelTime;
+    public int coinValues;
 
     void Start() {
-        countText.text = "0";
+        countText.text = "Distance: 0 m";
         startDistance = bike.transform.position.x;
     }
 
@@ -25,12 +27,14 @@ public class ScoreCounter : MonoBehaviour {
         if (previousDiff < diff) {
             displayCount += diff - previousDiff;
             previousDiff = diff;
-            countText.text = Math.Truncate(displayCount).ToString();
+            countText.text = "Distance: " + Math.Truncate(displayCount).ToString() + " m";
         }
+
+        levelTime += Time.deltaTime;        
     }
 
     public void CollectCoin(int value) {
-        displayCount += value;
-        countText.text = Math.Truncate(displayCount).ToString();
+        coinValues += value;
+        countText.text = "Distance: " + Math.Truncate(displayCount).ToString() + " m";
     }
 }
