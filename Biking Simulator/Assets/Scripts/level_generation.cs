@@ -36,14 +36,14 @@ public class level_generation : MonoBehaviour
         tile_list.Add(tile8);
         tile_list.Add(tile9);
         
-        index = 1;
+        index = 0;
     }
 
     void Update() 
     {
-        if (camera.transform.position.x == tile_list[index].transform.position.x && index < tile_list.lenght)
+        if (camera.transform.position.x == tile_list[index].transform.position.x && index < 9)
         {
-            tile_list[index + 1].transform.position.x = tile_list[index].transform.position.x + lenght;
+            tile_list[index + 1].transform.position= tile_list[index + 1].transform.position + new Vector3(lenght, 0, 0);
             index ++;
         }
     }
