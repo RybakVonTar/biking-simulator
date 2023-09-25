@@ -285,13 +285,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bike: {fileID: 545726730}
-<<<<<<< HEAD
-  boxSize: {x: 1, y: 1, z: 0}
-  maxDistance: 0.3
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 8
-=======
 --- !u!1 &180150135
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +603,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> cec5083f2f53cbe593c52583aab83c6e852fab29
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,13 +1338,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bike: {fileID: 545726730}
-<<<<<<< HEAD
-  boxSize: {x: 1, y: 1, z: 0}
-  maxDistance: 0.3
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 8
-=======
 --- !u!1 &833963145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,7 +1497,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> cec5083f2f53cbe593c52583aab83c6e852fab29
 --- !u!1 &834065505
 GameObject:
   m_ObjectHideFlags: 0
