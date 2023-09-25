@@ -16,10 +16,9 @@ public class level_generation : MonoBehaviour
     public GameObject tile9;
     public GameObject camera;
 
-    public int speed;
+    public int lenght;
 
-    private int tile0_index;
-    private int tile1_index;
+    private int index;
 
     private List<GameObject> tile_list;
 
@@ -37,21 +36,15 @@ public class level_generation : MonoBehaviour
         tile_list.Add(tile8);
         tile_list.Add(tile9);
         
-        tile0_index = 0;
-        tile1_index = 0;
+        index = 1;
     }
 
     void Update() 
     {
-        if (camera.transform.position.x > tile0.transform.position.x + 2)
+        if (camera.transform.position.x == tile_list[index].transform.position.x && index < tile_list.lenght)
         {
-            tile0_index ++;
-            tile1_index ++;
-        }
-        if (camera.transform.position.x < tile0.transform.position.x - 2)
-        {
-            tile0_index --;
-            tile1_index --;
+            tile_list[index + 1].transform.position.x = tile_list[index].transform.position.x + lenght;
+            index ++;
         }
     }
 } 
