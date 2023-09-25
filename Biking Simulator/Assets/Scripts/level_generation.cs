@@ -34,13 +34,11 @@ public class level_generation : MonoBehaviour
     {
         if (camera.transform.position.x > tile0.transform.position.x + 2)
         {
-            Debug.Log("new tile generated");
             tile0_index ++;
             tile1_index ++;
         }
         if (camera.transform.position.x < tile0.transform.position.x - 2)
         {
-            Debug.Log("new tile generated");
             tile0_index --;
             tile1_index --;
         }
