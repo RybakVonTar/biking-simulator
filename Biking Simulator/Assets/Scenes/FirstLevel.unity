@@ -1339,5 +1339,5 @@ MonoBehaviour:
   tile7: {fileID: 1836534843}
   tile8: {fileID: 1836534843}
   tile9: {fileID: 1836534843}
-  camera: {fileID: 0}
+  camera: {fileID: 519420028}
   speed: 10
