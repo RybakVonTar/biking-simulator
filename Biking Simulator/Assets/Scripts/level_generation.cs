@@ -40,6 +40,7 @@ public class level_generation : MonoBehaviour
 
     void Update() 
     {
+        // tiles
         if (Mathf.Round(camera.transform.position.x) == tile_list[index].transform.position.x && index < 9)
         {
             index ++;
