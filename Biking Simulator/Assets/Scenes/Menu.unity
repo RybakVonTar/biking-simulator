@@ -397,6 +397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yourButton: {fileID: 418592661}
   sceneName: Levels
+  exit: 0
 --- !u!1 &503305447
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,6 +535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yourButton: {fileID: 503305449}
   sceneName: Settings
+  exit: 0
 --- !u!1 &557979524
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +873,7 @@ GameObject:
   - component: {fileID: 896460420}
   - component: {fileID: 896460419}
   - component: {fileID: 896460418}
+  - component: {fileID: 896460421}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -981,6 +984,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896460416}
   m_CullTransparentMesh: 1
+--- !u!114 &896460421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896460416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e87224b873b0c6409c6778db2bb85c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yourButton: {fileID: 896460418}
+  sceneName: 
+  exit: 1
 --- !u!1 &1085421831
 GameObject:
   m_ObjectHideFlags: 0
