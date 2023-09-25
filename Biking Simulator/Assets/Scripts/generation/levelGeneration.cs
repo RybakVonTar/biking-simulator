@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class level_generation : MonoBehaviour
+public class LevelGeneration : MonoBehaviour
 {
     public GameObject tile0;
     public GameObject tile1;
