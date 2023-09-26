@@ -5,19 +5,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 public static class FileManager {
-    public static void WriteToFile(string fileName, BikeFrame fileContents) {
-        var path = Path.Combine(Application.persistentDataPath, fileName);
-        File.WriteAllText(path, JsonUtility.ToJson(fileContents)); 
-    }
-    public static void WriteToFile(string fileName, LevelSave fileContents) {
-        var path = Path.Combine(Application.persistentDataPath, fileName);
-        File.WriteAllText(path, JsonUtility.ToJson(fileContents)); 
-    }
-    public static void WriteToFile(string fileName, LoadSave fileContents) {
-        var path = Path.Combine(Application.persistentDataPath, fileName);
-        File.WriteAllText(path, JsonUtility.ToJson(fileContents)); 
-    }
-    public static void WriteToFile(string fileName, DistanceCounter fileContents) {
+    public static void WriteToFile<T>(string fileName, T fileContents) {
         var path = Path.Combine(Application.persistentDataPath, fileName);
         File.WriteAllText(path, JsonUtility.ToJson(fileContents)); 
     }

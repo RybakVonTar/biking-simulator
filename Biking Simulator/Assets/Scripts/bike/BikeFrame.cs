@@ -18,6 +18,9 @@ public class BikeFrame : MonoBehaviour {
     public bool speedBoost;
     public float speedBoostTimer;
     public int speedBoostValue;
+    public Vector3 boxSize;
+    public float maxDistance;
+    public LayerMask layerMask;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -82,5 +85,36 @@ public class BikeFrame : MonoBehaviour {
             }
         }
         transform.position = position;
+
+        string json_coins = FileManager.LoadFromFile("coinsSaveData.json");
+        CoinListSave coinsListLoaded = JsonUtility.FromJson<CoinListSave>(json_coins);
+        CoinCollectible[] coinsListNow = FindObjectsOfType<CoinCollectible>();
+        Debug.Log(coinsListLoaded.coinList[0] + " LOADED");
+        for (int i = 0; i < coinsListLoaded.coinList.Count; i += 1) {
+            coinsListNow[i].collected = coinsListLoaded.coinList[i];
+        }  
+        Debug.Log(coinsListNow[0].collected + " NOW");
+
+        string json_speedBoost = FileManager.LoadFromFile("speedBoostSaveData.json");
+        SpeedBoostListSave speedBoostListLoaded = JsonUtility.FromJson<SpeedBoostListSave>(json_speedBoost);
+        SpeedBoostCollectible[] speedBoostListNow = FindObjectsOfType<SpeedBoostCollectible>();
+        for (int i = 0; i < speedBoostListLoaded.speedBoostList.Count; i += 1) {
+            speedBoostListNow[i].collected = speedBoostListLoaded.speedBoostList[i];
+        }  
+        
+        string json_doubleJump = FileManager.LoadFromFile("doubleJumpSaveData.json");
+        DoubleJumpListSave doubleJumpListLoaded = JsonUtility.FromJson<DoubleJumpListSave>(json_doubleJump);
+        DoubleJumpCollectible[] doubleJumpListNow = FindObjectsOfType<DoubleJumpCollectible>();
+        for (int i = 0; i < doubleJumpListLoaded.doubleJumpList.Count; i += 1) {
+            doubleJumpListNow[i].collected = doubleJumpListLoaded.doubleJumpList[i];
+        }
+        // i'm going to kill myself
+    }
+
+    public bool GroundCheck() {
+        if (Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, maxDistance, layerMask)) {
+            return true;
+        }
+        return false;
     }
 }

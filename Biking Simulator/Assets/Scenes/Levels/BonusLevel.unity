@@ -170,6 +170,11 @@ MonoBehaviour:
   speedBoost: 0
   speedBoostTimer: 0
   speedBoostValue: 20
+  boxSize: {x: 0, y: 0, z: 0}
+  maxDistance: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!50 &1684829
 Rigidbody2D:
   serializedVersion: 4
@@ -289,7 +294,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -300,7 +305,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.7, y: 3}
+  m_Size: {x: 3, y: 0.1}
   m_EdgeRadius: 0
 --- !u!114 &1684834
 MonoBehaviour:
@@ -363,6 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &19321509
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -479,6 +485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &49400272
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -595,6 +602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &179633574
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -711,6 +719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &204329784
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -975,6 +984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &362160615
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1091,6 +1101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &364357352
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1207,6 +1218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &381674887
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1308,6 +1320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &425433928
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1472,6 +1485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &430255295
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1997,6 +2011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &488543029
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2092,7 +2107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503719751}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 109.03131, y: -6.1481667, z: 0}
+  m_LocalPosition: {x: 111.1, y: -5.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2113,6 +2128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &503719754
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2229,6 +2245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &574425918
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2345,6 +2362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &605100977
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2785,6 +2803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bike: {fileID: 1684828}
+  collected: 0
 --- !u!58 &728219137
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2993,6 +3012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &772893645
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3109,6 +3129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &812229438
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3225,6 +3246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &969929064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3341,6 +3363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1011834823
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3563,6 +3586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1083857696
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4004,6 +4028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1187496037
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4120,6 +4145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1204882496
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4236,6 +4262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1240104013
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4352,6 +4379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1307268181
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4635,6 +4663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1389415958
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4750,6 +4779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bike: {fileID: 1684828}
+  collected: 0
 --- !u!58 &1402769065
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4865,6 +4895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bike: {fileID: 1684828}
+  collected: 0
 --- !u!58 &1417444487
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4981,6 +5012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1438345208
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5368,6 +5400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1520116256
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5484,6 +5517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1557831542
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5809,6 +5843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!212 &1670062201
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6061,6 +6096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bike: {fileID: 1684828}
+  collected: 0
 --- !u!58 &1671569686
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6176,6 +6212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bike: {fileID: 1684828}
+  collected: 0
 --- !u!58 &1687741880
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6292,6 +6329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1707300484
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6408,6 +6446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1788817334
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6524,6 +6563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1807046725
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6934,6 +6974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &1964783438
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7319,6 +7360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bike: {fileID: 1684828}
+  collected: 0
 --- !u!58 &2007046329
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7452,6 +7494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &2026885383
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7568,6 +7611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &2049465323
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7684,6 +7728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 652606429}
   coinValue: 50
+  collected: 0
 --- !u!58 &2060311844
 CircleCollider2D:
   m_ObjectHideFlags: 0

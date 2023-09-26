@@ -16,6 +16,7 @@ public class ContinueButton : MonoBehaviour {
         LevelSave levelName = JsonUtility.FromJson<LevelSave>(json_level);
         FileManager.WriteToFile("loadSaveData.json", new LoadSave(true));
 
+        Debug.Log(levelName.levelName);
         SceneManager.LoadScene(sceneName: levelName.levelName); 
     }
 }

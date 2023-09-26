@@ -8,6 +8,6 @@ public class DeathCheck : MonoBehaviour {
     public BoxCollider2D col;
     void OnTriggerEnter2D() {
         Debug.Log("DEAD");
-        SceneManager.LoadScene(sceneName: "Menu");
+        //SceneManager.LoadScene(sceneName: "Menu");
     }
 }
