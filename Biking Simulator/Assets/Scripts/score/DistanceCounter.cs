@@ -33,7 +33,6 @@ public class DistanceCounter : MonoBehaviour {
             displayCount += diff - previousDiff;
             previousDiff = diff;
             countText.text = "Distance: " + Math.Truncate(displayCount).ToString() + " m";
-            Debug.Log(displayCount);
         }
 
         levelTime += Time.deltaTime;        
@@ -48,6 +47,11 @@ public class DistanceCounter : MonoBehaviour {
         string json_distance = FileManager.LoadFromFile("scoreSaveData.json");
         JsonUtility.FromJsonOverwrite(json_distance, this);
         bike = FindObjectOfType<BikeFrame>();
-        //countText = FindObjectsOfType<TextMeshProUGUI>();
+        TextMeshProUGUI[] countTextList = FindObjectsOfType<TextMeshProUGUI>();
+        for (int i = 0; i < countTextList.Length; i += 1) {
+            if (countTextList[i].CompareTag("distanceDisplay")) {
+                countText = countTextList[i];
+            }
+        }
     }
 }

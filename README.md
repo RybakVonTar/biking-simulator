@@ -5,7 +5,7 @@
 1. [🚲 Bike Simulator](#BikemSimulator)
 2. [🤷‍♂️ How to Play](#How.to.Play)
 3. [🎮 Controlls](#Controlls)
-4. [🖼️ Images](#images)
+4. [🖼️ Images](#Images)
 
 # 🚲 Bike Simulator
 * Desktop App

@@ -11,6 +11,7 @@ public class PlayButton : MonoBehaviour
     public bool exit;
     public bool save;
     public bool newLevel;
+    public bool restart;
 
     void Start()
     {
@@ -36,7 +37,7 @@ public class PlayButton : MonoBehaviour
 
             SceneManager.LoadScene(sceneName: sceneName);
         } 
-        else if (newLevel)
+        else if (newLevel || restart)
         {
             FileManager.WriteToFile("loadSaveData.json", new LoadSave(false));
             SceneManager.LoadScene(sceneName: sceneName); 
