@@ -291,8 +291,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115701447}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.531, y: -0.922, z: 0.04183185}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 1.531, y: -0.922, z: 0.041832}
+  m_LocalScale: {x: 0.53276, y: 0.53276, z: 0.53276}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 545726729}
@@ -312,8 +312,8 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5310001, y: -0.922}
+  m_Anchor: {x: -0.07530868, y: 0.11296314}
+  m_ConnectedAnchor: {x: 1.4908786, y: -0.8618178}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -358,7 +358,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.26
+  m_Radius: 1.4
 --- !u!212 &115701452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -400,7 +400,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 23e801bdd162b8b418cca3e9ea8ba4c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f61655c61637234cb84e21fb1367a5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -410,7 +410,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &115701453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1114,7 +1114,6 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
-  - component: {fileID: 519420034}
   - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
@@ -1202,30 +1201,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bike: {fileID: 545726730}
---- !u!114 &519420034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daf85432705b63f4a9cbe2a90351ffa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile0: {fileID: 819242963}
-  tile1: {fileID: 377067041}
-  tile2: {fileID: 2062645698}
-  tile3: {fileID: 1410731830}
-  tile4: {fileID: 1097449560}
-  tile5: {fileID: 461086410}
-  tile6: {fileID: 0}
-  tile7: {fileID: 0}
-  tile8: {fileID: 0}
-  tile9: {fileID: 0}
-  camera: {fileID: 0}
-  lenght: 0
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1732,7 +1707,7 @@ Transform:
   m_GameObject: {fileID: 805331172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.76, y: -0.91, z: 0.04183185}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 0.54140025, y: 0.54140025, z: 0.54140025}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 545726729}
@@ -1752,8 +1727,8 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -1.7600002, y: -0.91}
+  m_Anchor: {x: -0.06565891, y: 0.13131756}
+  m_ConnectedAnchor: {x: -1.795548, y: -0.8389047}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -1798,7 +1773,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.26
+  m_Radius: 1.4
 --- !u!212 &805331177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1840,7 +1815,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 23e801bdd162b8b418cca3e9ea8ba4c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f61655c61637234cb84e21fb1367a5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1850,7 +1825,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &805331178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2126,8 +2101,9 @@ PolygonCollider2D:
       - {x: 0.31126797, y: 0.035911888}
       - {x: 0.24003576, y: 0.025858223}
       - {x: 0.18170755, y: 0.016942829}
-      - {x: 0.12181622, y: 0.0008894168}
-      - {x: -0.03397435, y: -0.07771637}
+      - {x: 0.13002986, y: -0.018302038}
+      - {x: 0.010252882, y: -0.103304975}
+      - {x: -0.17107536, y: -0.135713}
       - {x: -0.39499998, y: -0.175}
       - {x: -0.515, y: -0.145}
       - {x: -0.60499996, y: -0.205}
@@ -2814,22 +2790,22 @@ PolygonCollider2D:
     - - {x: 0.66999996, y: 0.465}
       - {x: 0.6042356, y: 0.39695346}
       - {x: 0.3886366, y: 0.13955414}
-      - {x: 0.30697387, y: 0.121463135}
-      - {x: 0.15846056, y: -0.036389202}
-      - {x: 0.17463937, y: -0.16054982}
-      - {x: 0.081283584, y: -0.22730513}
-      - {x: -0.0147358505, y: -0.24390246}
-      - {x: -0.05280227, y: -0.40159228}
-      - {x: -0.078577414, y: -0.45804182}
-      - {x: -0.11209599, y: -0.4598719}
-      - {x: -0.13113657, y: -0.46298373}
-      - {x: -0.14070907, y: -0.48441997}
-      - {x: -0.15016963, y: -0.49805382}
-      - {x: -0.1547225, y: -0.50671405}
-      - {x: -0.17224796, y: -0.5253488}
-      - {x: -0.18620193, y: -0.5513289}
-      - {x: -0.20364109, y: -0.5774581}
-      - {x: -0.22605383, y: -0.59995395}
+      - {x: 0.3578429, y: 0.07241086}
+      - {x: 0.27529177, y: -0.05336883}
+      - {x: 0.20074703, y: -0.16659085}
+      - {x: 0.11594187, y: -0.30843008}
+      - {x: 0.036633715, y: -0.3878456}
+      - {x: -0.0449762, y: -0.41668528}
+      - {x: -0.08193144, y: -0.4448353}
+      - {x: -0.10998263, y: -0.48839572}
+      - {x: -0.12522069, y: -0.5143265}
+      - {x: -0.14155404, y: -0.5343367}
+      - {x: -0.15777582, y: -0.54654425}
+      - {x: -0.16655463, y: -0.5637617}
+      - {x: -0.17393826, y: -0.5866749}
+      - {x: -0.18620193, y: -0.60980266}
+      - {x: -0.20026048, y: -0.6516199}
+      - {x: -0.23070209, y: -0.6627063}
       - {x: -0.30692786, y: -0.6476846}
       - {x: -0.34918144, y: -0.68016946}
       - {x: -0.38369632, y: -0.6535425}
