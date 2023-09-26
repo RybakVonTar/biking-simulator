@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class DeathCheck : MonoBehaviour {
 
-    void OnTriggerEnter() {
+    public BoxCollider2D col;
+    void OnTriggerEnter2D() {
         Debug.Log("DEAD");
         SceneManager.LoadScene(sceneName: "Menu");
     }
