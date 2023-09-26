@@ -4,7 +4,7 @@
 
 1. [Controlls](#Controlls)
     1. [Images](#images)
-2. [Bike Simulator](#Bike Simulator)
+2. [Bike Simulator](#BikemSimulator)
 
 
 # Controlls
@@ -12,7 +12,7 @@
 * Right Arrow / D .... move right
 * Space .............. jump
 
-* #Images
+# Images
 
 
 # Bike Simulator
