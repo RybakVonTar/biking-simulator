@@ -16,7 +16,7 @@ public class LevelGeneration : MonoBehaviour
     public GameObject tile9;
     public GameObject camera;
 
-    public int lenght;
+    private float lenght;
     private int index;
 
     private List<GameObject> tile_list;
@@ -43,6 +43,7 @@ public class LevelGeneration : MonoBehaviour
         // tiles
         if (Mathf.Round(camera.transform.position.x) == tile_list[index].transform.position.x && index < 9)
         {
+            //lenght = tile_list[index].bound.size.x/2 + tile_list[index-1]sprite.bound.size.x/2;
             index ++;
             tile_list[index].transform.position = new Vector2(tile_list[index-1].transform.position.x + lenght, -1.5f);
             Debug.Log("new tile generated");
