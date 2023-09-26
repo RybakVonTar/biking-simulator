@@ -3,14 +3,16 @@
 ## Content
 
 1. [Controlls](#Controlls)
-    +. [Images](#images)
-2. [Bike Simulator](#BikemSimulator)
+    1. [Images](#images)
+2. [Bike Simulator](#Bike Simulator)
 
 
 # Controlls
 * Left Arrow / A ..... move left
 * Right Arrow / D .... move right
 * Space .............. jump
+
+* #Images
 
 
 # Bike Simulator
