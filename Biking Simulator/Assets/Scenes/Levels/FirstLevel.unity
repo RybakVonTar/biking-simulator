@@ -179,6 +179,7 @@ MonoBehaviour:
   yourButton: {fileID: 5226452}
   sceneName: FirstLevel
   exit: 0
+  save: 0
 --- !u!114 &5226452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2113,6 +2114,7 @@ MonoBehaviour:
   yourButton: {fileID: 806233897}
   sceneName: Menu
   exit: 0
+  save: 1
 --- !u!114 &806233897
 MonoBehaviour:
   m_ObjectHideFlags: 0
