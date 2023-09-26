@@ -792,6 +792,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreDisplay: {fileID: 1005088566}
   counter: {fileID: 834065507}
+  restartButton: {fileID: 5226449}
+  exitButton: {fileID: 806233894}
 --- !u!61 &250554955
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1729,7 +1731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06900e2c06f9d004bb45feee5026d0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
 --- !u!1 &758236968
 GameObject:
   m_ObjectHideFlags: 0

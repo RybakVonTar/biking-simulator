@@ -11,10 +11,16 @@ public class LevelScoreDisplay : MonoBehaviour {
     public GameObject restartButton;
     public GameObject exitButton;
 
+    private EscapeHandler script;
+    void Start() {
+        script = FindObjectOfType<EscapeHandler>();
+    }
+
     void OnTriggerEnter2D() {
         scoreDisplay.text = "Score\n" + Math.Truncate((counter.displayCount + counter.coinValues) / counter.levelTime * 1000);
-        restartButton.SetActive(true);
-        exitButton.SetActive(true);
+        script.menu = true;
+        script.restartButton.SetActive(true);
+        script.exitButton.SetActive(true);
         GetComponent<BoxCollider2D>().isTrigger = false;
     }
 }
