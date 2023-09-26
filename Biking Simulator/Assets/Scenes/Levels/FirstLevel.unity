@@ -428,7 +428,7 @@ MonoBehaviour:
   maxDistance: 0.3
   layerMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 1
 --- !u!1 &122189113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,7 +1843,7 @@ MonoBehaviour:
   maxDistance: 0.3
   layerMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 1
 --- !u!1 &806233894
 GameObject:
   m_ObjectHideFlags: 0
