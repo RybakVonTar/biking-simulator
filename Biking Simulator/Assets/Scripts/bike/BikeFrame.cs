@@ -11,7 +11,7 @@ public class BikeFrame : MonoBehaviour {
     public float tiltAcceleration;
     public float tiltForce;
     public float maxTiltForce;
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     public BikeWheels frontWheel;
     public BikeWheels backWheel;
     public bool doubleJump;
@@ -21,11 +21,13 @@ public class BikeFrame : MonoBehaviour {
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
-        speedBoostTimer = 0;/*
+        speedBoostTimer = 0;
         LoadSave load = JsonUtility.FromJson<LoadSave>(FileManager.LoadFromFile("loadSaveData.json"));
-        if (load != null) {
+        if (load != null && load.load) {
+            Debug.Log("LOADED");
             LoadSave();
-        }*/
+        }
+        FileManager.WriteToFile("loadSaveData.json", new LoadSave(false));
     }
 
     void Update() {
@@ -69,8 +71,15 @@ public class BikeFrame : MonoBehaviour {
     }
 
     void LoadSave() { 
-        FileManager.LoadFromFile("bikeSaveData.json");
         string json_bike = FileManager.LoadFromFile("bikeSaveData.json");
         JsonUtility.FromJsonOverwrite(json_bike, this);
+        BikeWheels[] wheelsList = FindObjectsOfType<BikeWheels>();
+        for (int i = 0; i < wheelsList.Length; i += 1) {
+            if (wheelsList[i].CompareTag("frontWheel")) {
+                frontWheel = wheelsList[i];
+            } else {
+                backWheel = wheelsList[i];
+            }
+        }
     }
 }
