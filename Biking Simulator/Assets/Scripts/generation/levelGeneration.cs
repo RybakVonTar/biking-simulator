@@ -16,7 +16,7 @@ public class LevelGeneration : MonoBehaviour
     public GameObject tile9;
     public GameObject camera;
 
-    private float lenght;
+    public float lenght;
     private int index;
 
     private List<GameObject> tile_list;
