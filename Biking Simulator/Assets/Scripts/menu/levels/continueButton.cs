@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class continueButton : MonoBehaviour
 {
-    public EscapeHandler script;
+    private EscapeHandler script;
 
     void Start() {
        script = FindObjectOfType<EscapeHandler>();
