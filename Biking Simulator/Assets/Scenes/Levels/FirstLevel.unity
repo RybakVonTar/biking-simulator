@@ -1214,18 +1214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf85432705b63f4a9cbe2a90351ffa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tile0: {fileID: 819242963}
-  tile1: {fileID: 377067041}
-  tile2: {fileID: 2062645698}
-  tile3: {fileID: 1410731830}
-  tile4: {fileID: 1097449560}
-  tile5: {fileID: 461086410}
-  tile6: {fileID: 461086410}
-  tile7: {fileID: 461086410}
-  tile8: {fileID: 461086410}
-  tile9: {fileID: 461086410}
-  camera: {fileID: 519420028}
-  lenght: 20
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1359,7 +1347,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545726725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.92, y: -0.481, z: -0.009997249}
+  m_LocalPosition: {x: -4.92, y: -0.481, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
