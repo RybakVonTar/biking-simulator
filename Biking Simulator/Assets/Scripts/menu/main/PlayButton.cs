@@ -28,6 +28,7 @@ public class PlayButton : MonoBehaviour
         }
         else if (save)
         {
+            Debug.Log("SOBEK");
             BikeFrame bike = FindObjectOfType<BikeFrame>();
             DistanceCounter counter = FindObjectOfType<DistanceCounter>();
             bike.position = bike.transform.position;
@@ -53,7 +54,7 @@ public class PlayButton : MonoBehaviour
 
             DoubleJumpCollectible[] doubleJumpListNow = FindObjectsOfType<DoubleJumpCollectible>();
             List<bool> doubleJumpSkullEmoji = new();
-            for (int i = 0; i < coinsListNow.Length; i += 1) {
+            for (int i = 0; i < doubleJumpListNow.Length; i += 1) {
                 doubleJumpSkullEmoji.Add(doubleJumpListNow[i].collected);
             }
             DoubleJumpListSave doubleJumpList = new(doubleJumpSkullEmoji);
