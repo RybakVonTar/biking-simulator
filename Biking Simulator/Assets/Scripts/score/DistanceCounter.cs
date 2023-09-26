@@ -7,11 +7,11 @@ using UnityEngine;
 public class DistanceCounter : MonoBehaviour {
 
     public TextMeshProUGUI countText;
-    private float previousDiff;
-    private float diff;
-    private float startDistance;
+    public float previousDiff;
+    public float diff;
+    public float startDistance;
     public BikeFrame bike;
-    private float bikeDistance;
+    public float bikeDistance;
     public float displayCount;
     public float levelTime;
     public int coinValues;
@@ -19,6 +19,11 @@ public class DistanceCounter : MonoBehaviour {
     void Start() {
         countText.text = "Distance: 0 m";
         startDistance = bike.transform.position.x;
+
+        LoadSave load = JsonUtility.FromJson<LoadSave>(FileManager.LoadFromFile("loadSaveData.json"));
+        if (load != null && load.load) {
+            LoadSave();
+        }
     }
 
     void Update() {
@@ -36,5 +41,13 @@ public class DistanceCounter : MonoBehaviour {
     public void CollectCoin(int value) {
         coinValues += value;
         countText.text = "Distance: " + Math.Truncate(displayCount).ToString() + " m";
+    }
+
+    private void LoadSave() { 
+        string json_distance = FileManager.LoadFromFile("scoreSaveData.json");
+        Debug.Log(json_distance);
+        JsonUtility.FromJsonOverwrite(json_distance, this);
+        Debug.Log(bikeDistance);
+        startDistance = bike.transform.position.x;
     }
 }
