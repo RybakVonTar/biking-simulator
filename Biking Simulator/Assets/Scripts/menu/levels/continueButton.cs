@@ -8,8 +8,8 @@ public class continueButton : MonoBehaviour
     private EscapeHandler script;
 
     void Start() {
-       script = FindObjectOfType<EscapeHandler>();
-       Button btn = GetComponent<Button>();
+        script = FindObjectOfType<EscapeHandler>();
+        Button btn = GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
     }
 
