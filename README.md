@@ -2,7 +2,7 @@
 
 ## Content
 
-1. [🚲 Biking Simulator](#Biking.Simulator)
+1. [🚲 Biking Simulator](#-biking-simulator)
 2. [📖 Overview](#Overview)
 3. [🤷‍♂️ How to Play](#How.to.Play)
 4. [🎮 Controlls](#Controlls)
