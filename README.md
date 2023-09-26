@@ -3,7 +3,7 @@
 ## Content
 
 1. [Bike Simulator](#BikemSimulator)
-2. [How to Play](#How to Play)
+2. [How to Play](#How.to.Play)
 3. [Controlls](#Controlls)
      1. [Images](#images)
 
