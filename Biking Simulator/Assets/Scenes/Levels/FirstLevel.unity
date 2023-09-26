@@ -291,8 +291,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115701447}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.531, y: -0.922, z: 0.04183185}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 1.531, y: -0.922, z: 0.041832}
+  m_LocalScale: {x: 0.53276, y: 0.53276, z: 0.53276}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 545726729}
@@ -312,8 +312,8 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5310001, y: -0.922}
+  m_Anchor: {x: -0.07530868, y: 0.11296314}
+  m_ConnectedAnchor: {x: 1.4908786, y: -0.8618178}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -358,7 +358,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.26
+  m_Radius: 1.4
 --- !u!212 &115701452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -400,7 +400,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 23e801bdd162b8b418cca3e9ea8ba4c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f61655c61637234cb84e21fb1367a5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -410,7 +410,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &115701453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1707,7 +1707,7 @@ Transform:
   m_GameObject: {fileID: 805331172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.76, y: -0.91, z: 0.04183185}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 0.54140025, y: 0.54140025, z: 0.54140025}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 545726729}
@@ -1727,8 +1727,8 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -1.7600002, y: -0.91}
+  m_Anchor: {x: -0.06565891, y: 0.13131756}
+  m_ConnectedAnchor: {x: -1.795548, y: -0.8389047}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -1773,7 +1773,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.26
+  m_Radius: 1.4
 --- !u!212 &805331177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1815,7 +1815,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 23e801bdd162b8b418cca3e9ea8ba4c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f61655c61637234cb84e21fb1367a5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1825,7 +1825,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &805331178
 MonoBehaviour:
   m_ObjectHideFlags: 0
