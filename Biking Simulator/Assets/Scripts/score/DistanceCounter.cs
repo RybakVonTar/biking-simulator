@@ -48,6 +48,6 @@ public class DistanceCounter : MonoBehaviour {
         string json_distance = FileManager.LoadFromFile("scoreSaveData.json");
         JsonUtility.FromJsonOverwrite(json_distance, this);
         bike = FindObjectOfType<BikeFrame>();
-        //countText = Fin
+        //countText = FindObjectsOfType<TextMeshProUGUI>();
     }
 }
