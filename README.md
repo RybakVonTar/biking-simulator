@@ -13,7 +13,9 @@
 
 # 📖 Overview
 
- **Biking-Simulator** is a 2D Desktop game...
+ **Biking-Simulator** is a 2D Desktop game, where you can drive with a bike on a map, collect Items and have to overcome obstacles. 
+
+
 
 # 🤷‍♂️ How to Play
 * Select a level
