@@ -17,6 +17,10 @@ public static class FileManager {
         var path = Path.Combine(Application.persistentDataPath, fileName);
         File.WriteAllText(path, JsonUtility.ToJson(fileContents)); 
     }
+    public static void WriteToFile(string fileName, DistanceCounter fileContents) {
+        var path = Path.Combine(Application.persistentDataPath, fileName);
+        File.WriteAllText(path, JsonUtility.ToJson(fileContents)); 
+    }
 
     public static string LoadFromFile(string fileName) {
         string result = File.ReadAllText(Path.Combine(Application.persistentDataPath, fileName));

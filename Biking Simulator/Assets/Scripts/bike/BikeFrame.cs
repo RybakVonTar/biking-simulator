@@ -27,7 +27,6 @@ public class BikeFrame : MonoBehaviour {
         if (load != null && load.load) {
             LoadSave();
         }
-        FileManager.WriteToFile("loadSaveData.json", new LoadSave(false));
     }
 
     void Update() {
@@ -73,7 +72,6 @@ public class BikeFrame : MonoBehaviour {
     private void LoadSave() { 
         string json_bike = FileManager.LoadFromFile("bikeSaveData.json");
         JsonUtility.FromJsonOverwrite(json_bike, this);
-        Debug.Log(transform.position);
         BikeWheels[] wheelsList = FindObjectsOfType<BikeWheels>();
 
         for (int i = 0; i < wheelsList.Length; i += 1) {
