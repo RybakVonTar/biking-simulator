@@ -2,10 +2,18 @@
 
 ## Content
 
-1. [Controlls](#Controlls)
-    1. [Images](#images)
-2. [Bike Simulator](#BikemSimulator)
+1. [Bike Simulator](#BikemSimulator)
+2. [How to Play](#How to Play)
+3. [Controlls](#Controlls)
+     1. [Images](#images)
 
+# Bike Simulator
+* Desktop App
+
+# How to Play
+* Select a level
+* Press the "play" Button
+* try to reach the end
 
 # Controlls
 * Left Arrow / A ..... move left
@@ -15,7 +23,6 @@
 # Images
 
 
-# Bike Simulator
-* Desktop App
+
 
 
