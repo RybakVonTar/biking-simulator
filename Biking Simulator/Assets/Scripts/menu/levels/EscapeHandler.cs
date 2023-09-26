@@ -19,13 +19,6 @@ public class EscapeHandler : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            // save position in level atc.
-            /*
-            bike.position = bike.transform.position;
-            FileManager.WriteToFile("bikeSaveData.json", bike);
-            FileManager.WriteToFile("levelSaveData.json", new LevelSave(SceneManager.GetActiveScene().name));
-            FileManager.WriteToFile("loadSaveData.json", new LoadSave(true));
-            */
             menu = true;
             continueButton.SetActive(true);
             restartButton.SetActive(true);

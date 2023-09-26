@@ -398,6 +398,7 @@ MonoBehaviour:
   yourButton: {fileID: 418592661}
   sceneName: Levels
   exit: 0
+  save: 0
 --- !u!1 &503305447
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +537,7 @@ MonoBehaviour:
   yourButton: {fileID: 503305449}
   sceneName: Settings
   exit: 0
+  save: 0
 --- !u!1 &557979524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1014,7 @@ MonoBehaviour:
   yourButton: {fileID: 896460418}
   sceneName: 
   exit: 1
+  save: 0
 --- !u!1 &1085421831
 GameObject:
   m_ObjectHideFlags: 0
