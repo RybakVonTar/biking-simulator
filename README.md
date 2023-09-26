@@ -3,10 +3,10 @@
 ## Content
 
 1. [🚲 Biking Simulator](#-biking-simulator)
-2. [📖 Overview](#Overview)
-3. [🤷‍♂️ How to Play](#How.to.Play)
-4. [🎮 Controlls](#Controlls)
-5. [🖼️ Images](#Images)
+2. [📖 Overview](#-overview)
+3. [🤷‍♂️ How to Play](#%EF%B8%8F-how-to-play)
+4. [🎮 Controlls](#-controlls)
+5. [🖼️ Images](#%EF%B8%8F-images)
 
 # 🚲 Biking Simulator
 * Desktop App
