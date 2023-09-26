@@ -2,13 +2,20 @@
 
 ## Content
 
-1. [🚲 Bike Simulator](#BikemSimulator)
-2. [🤷‍♂️ How to Play](#How.to.Play)
-3. [🎮 Controlls](#Controlls)
-4. [🖼️ Images](#Images)
+1. [🚲 Biking Simulator](#-biking-simulator)
+2. [📖 Overview](#-overview)
+3. [🤷‍♂️ How to Play](#%EF%B8%8F-how-to-play)
+4. [🎮 Controlls](#-controlls)
+5. [🖼️ Images](#%EF%B8%8F-images)
 
-# 🚲 Bike Simulator
+# 🚲 Biking Simulator
 * Desktop App
+
+# 📖 Overview
+
+ **Biking-Simulator** is a 2D Desktop game, where you can drive with a bike on a map, collect Items and have to overcome obstacles. 
+
+
 
 # 🤷‍♂️ How to Play
 * Select a level
@@ -21,6 +28,7 @@
 * Space .............. jump
 
 # 🖼️ Images
+...
 
 
 
