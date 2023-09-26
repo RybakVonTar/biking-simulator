@@ -36,6 +36,11 @@ public class LevelGeneration : MonoBehaviour
         tile_list.Add(tile9);
         
         index = 0;
+
+        /*LoadSave load = JsonUtility.FromJson<LoadSave>(FileManager.LoadFromFile("loadSaveData.json"));
+        if (load != null && load.load) {
+            LoadSave();
+        }*/
     }
 
     void Update() 
@@ -48,4 +53,13 @@ public class LevelGeneration : MonoBehaviour
             Debug.Log("new tile generated");
         }
     }
+
+    /*private void LoadSave() {
+        string json_bike = FileManager.LoadFromFile("generationSaveData.json");
+        JsonUtility.FromJsonOverwrite(json_bike, this);
+        Debug.Log(transform.position);
+        GameObject[] wheelsList = FindObjectsOfType<GameObject>();
+
+        transform.position = position;
+    }*/
 } 

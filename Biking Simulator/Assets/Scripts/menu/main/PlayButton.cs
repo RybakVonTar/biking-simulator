@@ -28,12 +28,11 @@ public class PlayButton : MonoBehaviour
         {
             BikeFrame bike = FindObjectOfType<BikeFrame>();
             bike.position = bike.transform.position;
+            FileManager.WriteToFile("loadSaveData.json", new LoadSave(true));
             FileManager.WriteToFile("bikeSaveData.json", bike);
             FileManager.WriteToFile("levelSaveData.json", new LevelSave(SceneManager.GetActiveScene().name));
-            FileManager.WriteToFile("loadSaveData.json", new LoadSave(true));
 
             SceneManager.LoadScene(sceneName: sceneName);
-            
         } 
         else
         {

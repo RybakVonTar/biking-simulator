@@ -70,7 +70,7 @@ public class BikeFrame : MonoBehaviour {
         } 
     }
 
-    void LoadSave() { 
+    private void LoadSave() { 
         string json_bike = FileManager.LoadFromFile("bikeSaveData.json");
         JsonUtility.FromJsonOverwrite(json_bike, this);
         Debug.Log(transform.position);
@@ -84,6 +84,5 @@ public class BikeFrame : MonoBehaviour {
             }
         }
         transform.position = position;
-
     }
 }
