@@ -181,6 +181,7 @@ MonoBehaviour:
   exit: 0
   save: 0
   newLevel: 0
+  restart: 1
 --- !u!114 &5226452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3552,6 +3553,7 @@ MonoBehaviour:
   exit: 0
   save: 1
   newLevel: 0
+  restart: 0
 --- !u!114 &806233897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3780,7 +3782,7 @@ GameObject:
   - component: {fileID: 834065510}
   m_Layer: 5
   m_Name: DistanceDisplay
-  m_TagString: Untagged
+  m_TagString: distanceDisplay
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
