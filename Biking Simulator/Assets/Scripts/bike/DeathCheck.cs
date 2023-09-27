@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class DeathCheck : MonoBehaviour {
 
     public BoxCollider2D col;
-    void OnTriggerEnter2D() {
-        Debug.Log("DEAD");
-        //SceneManager.LoadScene(sceneName: "Menu");
+    void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.CompareTag("ground")) {
+            Debug.Log("DEAD");
+        }
+        
     }
 }
