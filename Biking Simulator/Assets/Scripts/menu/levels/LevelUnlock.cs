@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelUnlock : MonoBehaviour
 {
@@ -33,7 +34,20 @@ public class LevelUnlock : MonoBehaviour
 
     void Update()
     {
-        buttonList[unlockedLevel].GetComponent<Buttons>().locked = false;
+        if (SceneManager.GetActiveScene().name == "Levels") {
+            buttonList.Clear();
+            buttonList.Add(GameObject.Find("Level 1"));
+            buttonList.Add(GameObject.Find("Level 2"));
+            buttonList.Add(GameObject.Find("Level 3"));
+            buttonList.Add(GameObject.Find("Level 4"));
+            buttonList.Add(GameObject.Find("Level 5"));
+            buttonList.Add(GameObject.Find("Level 6"));
+            buttonList.Add(GameObject.Find("Level 7"));
+            buttonList.Add(GameObject.Find("Level 8"));
+            buttonList.Add(GameObject.Find("Endless"));
+            buttonList[unlockedLevel].GetComponent<Buttons>().locked = false;
+        }
+        
     }
 
     private void Awake()
