@@ -7948,9 +7948,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b4033a32c6ba234ea7625a82d6ce696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  continueButton: {fileID: 0}
-  restartButton: {fileID: 0}
-  exitButton: {fileID: 0}
+  continueButton: {fileID: 660656051}
+  restartButton: {fileID: 5226449}
+  exitButton: {fileID: 806233894}
   menu: 0
 --- !u!4 &2093810141
 Transform:
