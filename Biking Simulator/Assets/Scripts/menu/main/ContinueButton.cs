@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 
 public class ContinueButton : MonoBehaviour {
+    public Button btn;
+    
     void Start() {
         Button btn = GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
