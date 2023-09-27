@@ -13,11 +13,21 @@ public class Buttons : MonoBehaviour
     public bool save;
     public bool newLevel;
     public bool restart;
+    public bool locked;
 
     void Start()
     {
         Button btn = yourButton.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
+    }
+
+    void Update() {
+        if (locked){
+            yourButton.interactable = false;
+        }
+        else {
+            yourButton.interactable = true;
+        }
     }
 
     void TaskOnClick()

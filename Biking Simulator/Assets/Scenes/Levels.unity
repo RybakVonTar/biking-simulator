@@ -375,6 +375,7 @@ MonoBehaviour:
   save: 0
   newLevel: 1
   restart: 0
+  locked: 0
 --- !u!1 &488240128
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +435,7 @@ MonoBehaviour:
   save: 0
   newLevel: 1
   restart: 0
+  locked: 1
 --- !u!114 &488240131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,6 +1590,7 @@ MonoBehaviour:
   save: 0
   newLevel: 1
   restart: 0
+  locked: 1
 --- !u!114 &1082940435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2085,6 +2088,7 @@ MonoBehaviour:
   save: 0
   newLevel: 1
   restart: 0
+  locked: 1
 --- !u!114 &1218549701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2224,8 +2228,9 @@ MonoBehaviour:
   sceneName: BonusLevel
   exit: 0
   save: 0
-  newLevel: 0
+  newLevel: 1
   restart: 0
+  locked: 0
 --- !u!114 &1361772373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2367,6 +2372,7 @@ MonoBehaviour:
   save: 0
   newLevel: 1
   restart: 0
+  locked: 1
 --- !u!114 &1616392264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2508,6 +2514,7 @@ MonoBehaviour:
   save: 0
   newLevel: 0
   restart: 0
+  locked: 0
 --- !u!114 &1709568419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2649,6 +2656,7 @@ MonoBehaviour:
   save: 0
   newLevel: 1
   restart: 0
+  locked: 1
 --- !u!114 &1799129207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3060,6 +3068,7 @@ MonoBehaviour:
   save: 0
   newLevel: 1
   restart: 0
+  locked: 1
 --- !u!114 &1944097041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3201,6 +3210,7 @@ MonoBehaviour:
   save: 0
   newLevel: 1
   restart: 0
+  locked: 1
 --- !u!114 &1988333629
 MonoBehaviour:
   m_ObjectHideFlags: 0

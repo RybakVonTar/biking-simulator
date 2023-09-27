@@ -538,6 +538,7 @@ MonoBehaviour:
   save: 0
   newLevel: 0
   restart: 0
+  locked: 0
 --- !u!1 &503305447
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,6 +680,7 @@ MonoBehaviour:
   save: 0
   newLevel: 0
   restart: 0
+  locked: 1
 --- !u!1 &557979524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,6 +1160,7 @@ MonoBehaviour:
   save: 0
   newLevel: 0
   restart: 0
+  locked: 0
 --- !u!1 &948859987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,6 +1848,7 @@ MonoBehaviour:
   save: 0
   newLevel: 0
   restart: 0
+  locked: 1
 --- !u!114 &1857284459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1986,6 +1990,7 @@ MonoBehaviour:
   save: 0
   newLevel: 0
   restart: 0
+  locked: 1
 --- !u!114 &1874533890
 MonoBehaviour:
   m_ObjectHideFlags: 0
