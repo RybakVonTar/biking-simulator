@@ -11,6 +11,17 @@ public class ContinueButton : MonoBehaviour {
         btn.onClick.AddListener(TaskOnClick);
     }
 
+    void Update() {
+        string json_load = FileManager.LoadFromFile("loadSaveData.json");
+        LoadSave load = JsonUtility.FromJson<LoadSave>(json_load);
+        if (load != null && load.load) {
+            btn.interactable = true;
+        }
+        else {
+            btn.interactable = false;
+        }
+    }
+
     void TaskOnClick() {
         string json_level = FileManager.LoadFromFile("levelSaveData.json");
         LevelSave levelName = JsonUtility.FromJson<LevelSave>(json_level);
