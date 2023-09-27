@@ -23,13 +23,11 @@ public class EscapeHandler : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            menu = true;
-            continueButton.SetActive(true);
-            restartButton.SetActive(true);
-            exitButton.SetActive(true);
+            Menu();
         }
         if (GetComponent<Camera>().isActiveAndEnabled) {}
         if (death && SceneManager.GetActiveScene().name == levelName) {
+            Menu();
             continueButton.SetActive(false);
             restartButton.SetActive(true);
             exitButton.SetActive(true);
@@ -40,5 +38,12 @@ public class EscapeHandler : MonoBehaviour {
             restartButton.SetActive(false);
             exitButton.SetActive(false);
         }
+    }
+
+    void Menu() {
+        menu = true;
+        continueButton.SetActive(true);
+        restartButton.SetActive(true);
+        exitButton.SetActive(true);
     }
 }
