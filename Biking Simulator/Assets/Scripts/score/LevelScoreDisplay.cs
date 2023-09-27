@@ -11,9 +11,13 @@ public class LevelScoreDisplay : MonoBehaviour {
     public BikeWheels frontWheel;
     public BikeWheels backWheel;
 
+    public int currentLevel;
+
     private EscapeHandler script;
+    private LevelUnlock levelUnlock;
     void Start() {
         script = FindObjectOfType<EscapeHandler>();
+        levelUnlock = FindObjectOfType<LevelUnlock>();
     }
 
     void OnTriggerEnter2D() {
@@ -26,5 +30,9 @@ public class LevelScoreDisplay : MonoBehaviour {
         frontWheel.GetComponent<HingeJoint2D>().useMotor = false;
         backWheel.GetComponent<HingeJoint2D>().useMotor = false;
         FileManager.WriteToFile("loadSaveData.json", new LoadSave(false));
+
+        if (levelUnlock.unlockedLevel < currentLevel) {
+            levelUnlock.unlockedLevel ++;
+        }
     }
 }

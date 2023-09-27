@@ -432,6 +432,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
+  escape: {fileID: 0}
 --- !u!1 &122189113
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,10 +993,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreDisplay: {fileID: 1005088566}
   counter: {fileID: 834065507}
-  restartButton: {fileID: 5226449}
-  exitButton: {fileID: 806233894}
   frontWheel: {fileID: 115701453}
   backWheel: {fileID: 805331178}
+  currentLevel: 1
 --- !u!61 &250554955
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2267,6 +2267,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 0
+  escape: {fileID: 0}
 --- !u!114 &545726731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3472,6 +3473,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
+  escape: {fileID: 0}
 --- !u!1 &806233894
 GameObject:
   m_ObjectHideFlags: 0
