@@ -2258,7 +2258,7 @@ MonoBehaviour:
   maxTiltForce: 0.35
   frontWheel: {fileID: 115701453}
   backWheel: {fileID: 805331178}
-  doubleJump: 1
+  doubleJump: 0
   speedBoost: 0
   speedBoostTimer: 0
   speedBoostValue: 20
