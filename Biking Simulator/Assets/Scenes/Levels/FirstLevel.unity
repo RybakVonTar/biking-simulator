@@ -2255,7 +2255,7 @@ MonoBehaviour:
   jumpForce: 40
   tiltAcceleration: 0.05
   tiltForce: 0
-  maxTiltForce: 0.35
+  maxTiltForce: 0.25
   frontWheel: {fileID: 115701453}
   backWheel: {fileID: 805331178}
   doubleJump: 0
