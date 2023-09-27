@@ -18,7 +18,7 @@ public class ContinueButton : MonoBehaviour {
         LoadSave load = JsonUtility.FromJson<LoadSave>(json_load);
         if (load != null && load.load) {
             Debug.Log(levelName.levelName);
-            SceneManager.LoadScene(sceneName: levelName.levelName);     
+            SceneManager.LoadScene(sceneName: levelName.levelName);
         }
     }
 }
