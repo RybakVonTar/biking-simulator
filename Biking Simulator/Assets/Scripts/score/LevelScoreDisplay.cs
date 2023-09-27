@@ -8,8 +8,6 @@ public class LevelScoreDisplay : MonoBehaviour {
 
     public TextMeshProUGUI scoreDisplay;
     public DistanceCounter counter;
-    public GameObject restartButton;
-    public GameObject exitButton;
     public BikeWheels frontWheel;
     public BikeWheels backWheel;
 
