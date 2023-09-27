@@ -50,6 +50,7 @@ public class BikeFrame : MonoBehaviour {
             }
 
             if (Input.GetKey(KeyCode.A) && !(backWheel.GroundCheck() || frontWheel.GroundCheck())) {
+                rb.angularVelocity = 0;
                 if (tiltForce < maxTiltForce) {
                     tiltForce += tiltAcceleration;
                 }

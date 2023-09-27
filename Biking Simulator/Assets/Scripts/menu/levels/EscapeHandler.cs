@@ -31,6 +31,7 @@ public class EscapeHandler : MonoBehaviour {
             continueButton.SetActive(false);
             restartButton.SetActive(true);
             exitButton.SetActive(true);
+            FileManager.WriteToFile("loadSaveData.json", new LoadSave(false));
         } 
         else if (!menu)
         {
