@@ -10,6 +10,8 @@ public class LevelScoreDisplay : MonoBehaviour {
     public DistanceCounter counter;
     public GameObject restartButton;
     public GameObject exitButton;
+    public BikeWheels frontWheel;
+    public BikeWheels backWheel;
 
     private EscapeHandler script;
     void Start() {
@@ -22,5 +24,9 @@ public class LevelScoreDisplay : MonoBehaviour {
         script.restartButton.SetActive(true);
         script.exitButton.SetActive(true);
         GetComponent<BoxCollider2D>().isTrigger = false;
+
+        frontWheel.GetComponent<HingeJoint2D>().useMotor = false;
+        backWheel.GetComponent<HingeJoint2D>().useMotor = false;
+        FileManager.WriteToFile("loadSaveData.json", new LoadSave(false));
     }
 }
