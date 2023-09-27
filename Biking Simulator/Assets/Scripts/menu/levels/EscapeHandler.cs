@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EscapeHandler : MonoBehaviour {
     public GameObject continueButton;
@@ -8,12 +10,14 @@ public class EscapeHandler : MonoBehaviour {
     public GameObject exitButton;
     public bool menu;
     public bool death;
+    public string levelName;
 
     void Start() {
         menu = false;
         continueButton.SetActive(false);
         restartButton.SetActive(false);
         exitButton.SetActive(false);
+        levelName = SceneManager.GetActiveScene().name;
     }
 
     void Update() {
@@ -24,12 +28,13 @@ public class EscapeHandler : MonoBehaviour {
             restartButton.SetActive(true);
             exitButton.SetActive(true);
         }
-        if (death) {
+        if (GetComponent<Camera>().isActiveAndEnabled) {}
+        if (death && SceneManager.GetActiveScene().name == levelName) {
             continueButton.SetActive(false);
             restartButton.SetActive(true);
             exitButton.SetActive(true);
-        }
-        if (!menu)
+        } 
+        else if (!menu)
         {
             continueButton.SetActive(false);
             restartButton.SetActive(false);

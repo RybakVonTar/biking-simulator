@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ffd7db5662b6aa44aae60a487b354f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  col: {fileID: 1684833}
+  escapeHandler: {fileID: 665193998}
 --- !u!1 &19321506
 GameObject:
   m_ObjectHideFlags: 0
@@ -2624,6 +2624,8 @@ MonoBehaviour:
   restartButton: {fileID: 1995127907}
   exitButton: {fileID: 1936116431}
   menu: 0
+  death: 0
+  levelName: BonusLevel
 --- !u!114 &665193999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2923,6 +2925,8 @@ MonoBehaviour:
   counter: {fileID: 652606429}
   restartButton: {fileID: 1995127907}
   exitButton: {fileID: 1936116431}
+  frontWheel: {fileID: 0}
+  backWheel: {fileID: 0}
 --- !u!61 &736276354
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3465,6 +3469,8 @@ MonoBehaviour:
   restartButton: {fileID: 1995127907}
   exitButton: {fileID: 1936116431}
   menu: 0
+  death: 0
+  levelName: 
 --- !u!4 &1018498965
 Transform:
   m_ObjectHideFlags: 0
@@ -6844,6 +6850,7 @@ MonoBehaviour:
   save: 1
   newLevel: 0
   restart: 0
+  locked: 0
 --- !u!114 &1936116434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7246,6 +7253,7 @@ MonoBehaviour:
   save: 0
   newLevel: 0
   restart: 1
+  locked: 0
 --- !u!114 &1995127910
 MonoBehaviour:
   m_ObjectHideFlags: 0

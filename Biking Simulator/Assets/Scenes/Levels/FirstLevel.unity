@@ -1991,6 +1991,7 @@ MonoBehaviour:
   exitButton: {fileID: 806233894}
   menu: 0
   death: 0
+  levelName: FirstLevel
 --- !u!1 &541070003
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,7 +2290,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 1}
@@ -7997,6 +7998,7 @@ MonoBehaviour:
   exitButton: {fileID: 806233894}
   menu: 0
   death: 0
+  levelName: 
 --- !u!4 &2093810141
 Transform:
   m_ObjectHideFlags: 0
