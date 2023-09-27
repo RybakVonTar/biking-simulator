@@ -11,6 +11,7 @@ public class ContinueButton : MonoBehaviour {
     void Start() {
         Button btn = GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
+        btn.interactable = false;
     }
 
     void Update() {
