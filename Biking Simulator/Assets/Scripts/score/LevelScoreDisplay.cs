@@ -10,7 +10,6 @@ public class LevelScoreDisplay : MonoBehaviour {
     public DistanceCounter counter;
     public BikeWheels frontWheel;
     public BikeWheels backWheel;
-
     private EscapeHandler script;
     void Start() {
         script = FindObjectOfType<EscapeHandler>();
