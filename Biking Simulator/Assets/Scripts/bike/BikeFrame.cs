@@ -22,9 +22,13 @@ public class BikeFrame : MonoBehaviour {
     public float maxDistance;
     public LayerMask layerMask;
 
+    public EscapeHandler escape;
+
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         speedBoostTimer = 0;
+
+        escape = FindObjectOfType<EscapeHandler>();
 
         LoadSave load = JsonUtility.FromJson<LoadSave>(FileManager.LoadFromFile("loadSaveData.json"));
         if (load != null && load.load) {
@@ -33,43 +37,45 @@ public class BikeFrame : MonoBehaviour {
     }
 
     void Update() {
+
+        if (!escape.menu) {
+            if (Input.GetKeyDown(KeyCode.Space) && (backWheel.GroundCheck() || frontWheel.GroundCheck())) {
+                rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
+                tiltForce = 0;
+
+            } else if (Input.GetKeyDown(KeyCode.Space) && doubleJump) {
+                doubleJump = false;
+                rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
+                tiltForce = 0;
+            }
+
+            if (Input.GetKey(KeyCode.A) && !(backWheel.GroundCheck() || frontWheel.GroundCheck())) {
+                if (tiltForce < maxTiltForce) {
+                    tiltForce += tiltAcceleration;
+                }
+                transform.Rotate(0, 0, tiltForce);
+
+            } else if (Input.GetKey(KeyCode.D) && !(backWheel.GroundCheck() || frontWheel.GroundCheck())) {
+                if (tiltForce < maxTiltForce) {
+                    tiltForce += tiltAcceleration;
+                }
+                transform.Rotate(0, 0, -tiltForce);
+
+            } else if (Input.GetKey(KeyCode.W) && speedBoost) {
+                motorTorque += speedBoostValue;
+                speedBoost = false;
+                speedBoostTimer = 3;
+            }
         
-        if (Input.GetKeyDown(KeyCode.Space) && (backWheel.GroundCheck() || frontWheel.GroundCheck())) {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
-            tiltForce = 0;
 
-        } else if (Input.GetKeyDown(KeyCode.Space) && doubleJump) {
-            doubleJump = false;
-            rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
-            tiltForce = 0;
+            if (speedBoostTimer > 0) {
+                speedBoostTimer -= Time.deltaTime;
+
+                if (speedBoostTimer <= 0) {
+                    motorTorque -= speedBoostValue;
+                }
+            } 
         }
-
-        if (Input.GetKey(KeyCode.A) && !(backWheel.GroundCheck() || frontWheel.GroundCheck())) {
-            if (tiltForce < maxTiltForce) {
-                tiltForce += tiltAcceleration;
-            }
-            transform.Rotate(0, 0, tiltForce);
-
-        } else if (Input.GetKey(KeyCode.D) && !(backWheel.GroundCheck() || frontWheel.GroundCheck())) {
-            if (tiltForce < maxTiltForce) {
-                tiltForce += tiltAcceleration;
-            }
-            transform.Rotate(0, 0, -tiltForce);
-
-        } else if (Input.GetKey(KeyCode.W) && speedBoost) {
-            motorTorque += speedBoostValue;
-            speedBoost = false;
-            speedBoostTimer = 3;
-        }
-        
-
-        if (speedBoostTimer > 0) {
-            speedBoostTimer -= Time.deltaTime;
-
-            if (speedBoostTimer <= 0) {
-                motorTorque -= speedBoostValue;
-            }
-        } 
     }
 
     private void LoadSave() { 
