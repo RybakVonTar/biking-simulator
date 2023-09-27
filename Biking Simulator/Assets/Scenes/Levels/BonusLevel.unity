@@ -3461,9 +3461,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b4033a32c6ba234ea7625a82d6ce696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  continueButton: {fileID: 0}
-  restartButton: {fileID: 0}
-  exitButton: {fileID: 0}
+  continueButton: {fileID: 1509305870}
+  restartButton: {fileID: 1995127907}
+  exitButton: {fileID: 1936116431}
   menu: 0
 --- !u!4 &1018498965
 Transform:
