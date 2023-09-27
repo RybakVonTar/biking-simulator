@@ -2468,7 +2468,7 @@ MonoBehaviour:
   previousDiff: 0
   diff: 0
   startDistance: 0
-  bike: {fileID: 0}
+  bike: {fileID: 85790494}
   bikeDistance: 0
   displayCount: 0
   levelTime: 0
