@@ -2806,7 +2806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e573a58a703ea74a88d78f3dc3b0aa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bike: {fileID: 0}
+  bike: {fileID: 85790494}
   collected: 0
 --- !u!58 &728219137
 CircleCollider2D:
@@ -4786,7 +4786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7203b71fb70400a4bb340187f39ac9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bike: {fileID: 0}
+  bike: {fileID: 85790494}
   collected: 0
 --- !u!58 &1402769065
 CircleCollider2D:
@@ -4902,7 +4902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e573a58a703ea74a88d78f3dc3b0aa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bike: {fileID: 0}
+  bike: {fileID: 85790494}
   collected: 0
 --- !u!58 &1417444487
 CircleCollider2D:
@@ -6135,7 +6135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7203b71fb70400a4bb340187f39ac9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bike: {fileID: 0}
+  bike: {fileID: 85790494}
   collected: 0
 --- !u!58 &1687741880
 CircleCollider2D:
@@ -7285,7 +7285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7203b71fb70400a4bb340187f39ac9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bike: {fileID: 0}
+  bike: {fileID: 85790494}
   collected: 0
 --- !u!58 &2007046329
 CircleCollider2D:
