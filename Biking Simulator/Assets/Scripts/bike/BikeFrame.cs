@@ -89,11 +89,9 @@ public class BikeFrame : MonoBehaviour {
         string json_coins = FileManager.LoadFromFile("coinsSaveData.json");
         CoinListSave coinsListLoaded = JsonUtility.FromJson<CoinListSave>(json_coins);
         CoinCollectible[] coinsListNow = FindObjectsOfType<CoinCollectible>();
-        Debug.Log(coinsListLoaded.coinList[0] + " LOADED");
         for (int i = 0; i < coinsListLoaded.coinList.Count; i += 1) {
             coinsListNow[i].collected = coinsListLoaded.coinList[i];
         }  
-        Debug.Log(coinsListNow[0].collected + " NOW");
 
         string json_speedBoost = FileManager.LoadFromFile("speedBoostSaveData.json");
         SpeedBoostListSave speedBoostListLoaded = JsonUtility.FromJson<SpeedBoostListSave>(json_speedBoost);
@@ -108,7 +106,6 @@ public class BikeFrame : MonoBehaviour {
         for (int i = 0; i < doubleJumpListLoaded.doubleJumpList.Count; i += 1) {
             doubleJumpListNow[i].collected = doubleJumpListLoaded.doubleJumpList[i];
         }
-        // i'm going to kill myself
     }
 
     public bool GroundCheck() {

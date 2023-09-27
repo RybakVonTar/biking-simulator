@@ -5,11 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class DeathCheck : MonoBehaviour {
 
-    public BoxCollider2D col;
-    void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.CompareTag("ground")) {
-            Debug.Log("DEAD");
-        }
-        
+    public EscapeHandler escapeHandler;
+    void OnCollisionEnter2D(Collision2D collision) {
+        escapeHandler.death = collision.gameObject.CompareTag("ground");
+        Debug.Log(escapeHandler.death);
+        Destroy(this);
     }
 }

@@ -6,8 +6,8 @@ public class EscapeHandler : MonoBehaviour {
     public GameObject continueButton;
     public GameObject restartButton;
     public GameObject exitButton;
-
     public bool menu;
+    public bool death;
 
     void Start() {
         menu = false;
@@ -21,6 +21,11 @@ public class EscapeHandler : MonoBehaviour {
         {
             menu = true;
             continueButton.SetActive(true);
+            restartButton.SetActive(true);
+            exitButton.SetActive(true);
+        }
+        if (death) {
+            continueButton.SetActive(false);
             restartButton.SetActive(true);
             exitButton.SetActive(true);
         }
