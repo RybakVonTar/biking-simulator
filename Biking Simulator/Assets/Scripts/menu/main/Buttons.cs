@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayButton : MonoBehaviour
+public class Buttons : MonoBehaviour
 {
     public Button yourButton;
     public string sceneName;

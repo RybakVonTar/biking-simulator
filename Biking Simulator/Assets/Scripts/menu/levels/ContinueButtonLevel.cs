@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class continueButton : MonoBehaviour
+public class ContinueButtonLevel : MonoBehaviour
 {
     private EscapeHandler script;
 
