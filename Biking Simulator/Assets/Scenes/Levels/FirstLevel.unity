@@ -995,6 +995,7 @@ MonoBehaviour:
   counter: {fileID: 834065507}
   frontWheel: {fileID: 115701453}
   backWheel: {fileID: 805331178}
+  currentLevel: 1
 --- !u!61 &250554955
 BoxCollider2D:
   m_ObjectHideFlags: 0
