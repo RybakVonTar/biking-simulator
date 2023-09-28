@@ -7166,7 +7166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yourButton: {fileID: 1995127910}
-  sceneName: FirstLevel
+  sceneName: BonusLevel
   exit: 0
   save: 0
   newLevel: 0
